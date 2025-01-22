@@ -29,11 +29,24 @@ p{
     color: #333;
     margin: 15px 0 20px 0;
 }
-/* .section-p1{
-    padding: 40px 80px;
-} */
+.section-p1{
+    padding: 40px 40px;
+    gap: 10px;
+}
 .section-m1{
     margin: 40px;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
 }
 body{
     width: 100%;
@@ -45,13 +58,19 @@ body{
     justify-content: space-between;
     padding: 20px 80px;
     background-color: beige;
-    box-shadow: #222;
+    box-shadow: 0  5px 5px rgb(0,0,0,0.03);
+    z-index: 999;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+
+
 }
 #navbar{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
 
 }
 #navbar li{
@@ -70,11 +89,12 @@ body{
 #navbar li a.active{
     color:lightseagreen;
 }
-#navbar li a.active::after{
+#navbar li a.active::after,
+#navbar li a:hover::after{
     content: "";
     width: 30%;
     height: 2px;
-    background-color: #088178;
+    background-color: lightseagreen;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -92,7 +112,7 @@ background-image: url(ecom/img.JPG;)
     justify-items: center;
     align-items: center;
     gap: 20%;
-    margin: 30px;
+    /* margin: 30px; */
     padding: 20px;
 
  }
@@ -101,39 +121,53 @@ background-image: url(ecom/img.JPG;)
     background-color: transparent;
     color:  #088178;
     border: 0;
-    /* padding: 14px 80px 65px; */
-    width: 60px;
-    height: 40px;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    padding: 14px 80px 14px 65px;
+    /* width: 60px;
+    height: 40px; */
+     background-repeat: no-repeat; 
+    cursor: pointer; 
+    font-weight: 700;
+    font-size: 15px;
  }
 
- #features{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-justify-content: space-between;
-margin: 40px;
+ #features .fe-box{
+ width: 180px;
+ text-align: center;
+ padding: 25px 15px;
+ box-shadow: 20px 20px 34px rgb(0,0,0,0.3);
+ border: 1px solid #cce7d0;
+ border-radius: 4px;
+ margin: 15px 0;
+ /* gap: 30px; */
 
 
  }
 
- .fe-box {
-/* display: flex; */
-/* justify-content: center; */
-/* align-items: center; */
-/* margin-left: 30px; */
+ #features .fe-box:hover{
+    box-shadow: 20px 20px 54px rgb(70,62,221,0.1);
+
+
+ }
+
+
+
+ /* .fe-box {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 30px;
 width: 180px;
 text-align: center;
 box-shadow: 20px 20px 34px;
 border: 1px solid rgb(0,0,0,03);
 border-radius: 4px;
 margin: 15px 0;
-}
-.fe-box h6{
-    /* display: inline-block; */
+} */
+#features .fe-box h6{
+    display: inline-block;
     padding: 9px 8px 6px 8px;
-    border-radius: 12px;
+    line-height: 1;
+    border-radius: 4px;
     color: #088178;
     background-color: rgb(218, 180, 124);
 }
@@ -152,6 +186,137 @@ margin: 15px 0;
 .fe-box:nth-child(6) h6{
     background-color: rgb(197, 197, 230);
 }
+
+
+#features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 8%; */
+}
 #product1{
     text-align: center;
 }
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 14px;
+    cursor: pointer;
+    margin: 15px 0;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+}
+#product1 .pro .des{
+    text-align: center;
+    font-size: 12px;
+}
+
+#product1 .pro .des span{
+    color: #333;
+    font-size: 12px;
+
+}
+
+#product1 .pro .des h5{
+padding-top: 18px;
+color: #333;
+/* font: 14px; */
+}
+
+
+#product1 .pro .des i{
+    font-size: 12px;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    /* line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0; */
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    display: flex;
+    justify-items: end;
+    color: #088178;
+
+
+
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/bannerimg.avif");
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+#banner h4{
+    color: white;
+    font-size: 16px;
+}
+#banner h2{
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+ 
+}
+#banner h2 span{
+    color: rgb(92, 3, 3);
+    /* font-size: 30px;
+    padding: 10px 0; */
+ 
+}
+#banner:hover{
+    background-color: #088178;
+    color: white;
+}
+.banner-box{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: left;
+    flex-direction: column;
+    background-image: url("img/buy-get.jpeg");
+    width: 20%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+
