@@ -48,6 +48,18 @@ button.normal{
     outline: none;
     transition: 0.2s;
 }
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 14px 30px;
+    color: white;
+    background-color: transparent;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+}
 body{
     width: 100%;
 }
@@ -311,12 +323,199 @@ color: #333;
     justify-content: center;
     justify-items: center;
     text-align: left;
+    align-items: flex-start;
     flex-direction: column;
     background-image: url("img/buy-get.jpeg");
-    width: 20%;
-    height: 200px;
+    width: 50%;
+    height: 400px;
     background-size: cover;
     background-position: center;
+    padding: 40px;
+    /* gap: 40px; */
+    /* margin: 10px; */
+    border-radius: 4px;
+   
+}
+#sm-banner{
+    display: flex;
+    /* justify-content: space-between; */
+    /* justify-content: center;
+    justify-items: center;
+    text-align: center;
+    background-image: url("img/buy-get.jpeg");
+    justify-content: space-between;
+    /* flex-wrap: wrap; */ 
+
+} 
+.banner-box h4 {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+.banner-box h2 {
+    color: white;
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: 800;
 }
 
+.banner-box span {
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-bottom :15px;
+}
+.banner-box button:hover{
+    background-color: #088178;
+    border: 1px solid#088178;
+}
+.banner-box2{
+    background-image: url("img/get.jpeg");
 
+}
+
+#banner3 .banner-box{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: left;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url("img/prt.jpg");
+    width:30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-top: 20px;
+    /* gap: 40px; */
+    /* margin: 10px; */
+    /* border-radius: 4px; */
+
+   
+}
+
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    margin: 0%;
+}
+
+#banner3 .banner-box h3{
+    color: aquamarine;
+}
+.newsletter-container {
+    background-color: #08244f;
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter-content h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.newsletter-content p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.newsletter-content .highlight {
+    color: #fbc531;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.newsletter-form button {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #0e946d;
+}
+/*  */
+.footer-container {
+    background-color: #ffffff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-top: 1px solid #ddd;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px 0;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #0073e6;
+}
+
+/* .social-icons a {
+    margin-right: 10px;
+} */
+
+/* .social-icons img, 
+.app-links img, 
+.payment-icons img {
+    width: 24px;
+    height: auto;
+    margin-right: 10px;
+} */
+
+.app-links a {
+    margin-right: 10px;
+}
